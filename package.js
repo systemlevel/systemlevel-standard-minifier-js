@@ -1,6 +1,6 @@
 Package.describe({
   name: 'systemlevel:standard-minifier-js',
-  version: '2.3.7',
+  version: '2.3.9',
   summary: 'Standard javascript minifiers updated for mapbox-gl fix used with Meteor apps.',
   github: 'https://github.com/systemlevel/systemlevel-standard-minifier-js',
   documentation: 'README.md',

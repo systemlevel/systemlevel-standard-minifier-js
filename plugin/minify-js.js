@@ -116,8 +116,8 @@ MeteorBabelMinifier.prototype.processFilesForBundle = function(files, options) {
   };
 
   files.forEach(file => {
-    // Don't reminify *.min.js.
-    if (/(mapbox-gl)\.min\.js$/.test(file.getPathInBundle())) {
+    // Don't reminify *.min.js. or mapbox files 
+    if (/\.min\.js$/.test(file.getPathInBundle()) || /[mapbox]/.test(file.getPathInBundle()) ) {
       toBeAdded.data += file.getContentsAsString();
     } else {
       var minified;
